@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://prefabs/Card.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="Card" type="ColorRect"]
+margin_right = 199.0
+margin_bottom = 266.0
+color = Color( 0.152941, 0.152941, 0.152941, 1 )
+script = ExtResource( 1 )
+
+[node name="BgColor" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+color = Color( 0.54902, 0.152941, 0.152941, 1 )
+
+[node name="lb_title" type="Label" parent="."]
+anchor_right = 1.0
+margin_top = 7.0
+margin_bottom = 38.0
+text = "TITLE"
+align = 1
+valign = 1
+
+[node name="img" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -81.5
+margin_top = -87.0
+margin_right = 80.5
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 6
+
+[node name="lb_type" type="Label" parent="."]
+anchor_right = 1.0
+margin_top = 143.0
+margin_bottom = 174.0
+text = "type"
+align = 1
+valign = 1
+
+[node name="lb_desc" type="Label" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -91.0
+margin_bottom = -7.0
+text = "TITLE"
+align = 1
+valign = 1

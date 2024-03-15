@@ -17,4 +17,4 @@ func _ready():
 
 
 func _on_Button_pressed():
-	GC.export_node_to_png($ColorRect)
+	GC.export_node_to_png($Card)

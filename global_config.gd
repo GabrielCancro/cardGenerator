@@ -20,4 +20,4 @@ func export_node_to_png(node):
 		print(region)
 	var image = get_viewport().get_texture().get_data()
 	image.flip_y()
-	image.get_rect( region ).save_png("abcabc.png")
+	image.get_rect( region ).save_png(node.name+".png")
